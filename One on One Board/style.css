@@ -1,0 +1,159 @@
+.{
+    box-sizing: border-box;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 95vw;
+    height: 95vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap:wrap;
+    overflow:auto;
+}
+
+.details{
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0 ,0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.form{
+    background-color:whitesmoke;
+    width: 50%;
+    height: 60%;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0 ,0, 0.5);
+}
+
+.closebtn{
+    margin-left: 95%;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 5px rgba(0, 0 ,0, 0.5);
+  
+    
+}
+.closebtn span{
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+.closebtn:hover{
+    cursor: pointer;
+}
+
+table{
+    margin-bottom: 15%;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+
+
+.card{
+    margin: 5px 5px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 50px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 5px 5px rgba(0, 0 ,0, 0.5);
+    transition: transform 0.1s;
+
+}
+.card:hover{
+    transform: scale(1.1);
+  }
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+}
+select{
+
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.save{
+    background-color: dodgerblue;
+    color: black;
+    transition: transform 0.1s;
+    border-radius: 10px;
+}
+.save:hover{
+    transform: scale(1.01);
+    background-color: dodgerblue;
+}
+.comment{
+    height: 150px;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+}
+
+.description{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Designation{
+    font-size: medium;
+    font-weight: bolder;
+}
+.empid{
+    font-size: medium;
+    font-weight: bolder;
+}

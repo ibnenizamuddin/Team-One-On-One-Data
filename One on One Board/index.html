@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style/w3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" id="main">
+    </div>
+    <br>
+    <br>
+    <div class="details" id="details">
+
+        <div class="form">
+            <div class="closebtn" onclick=hideModal()>
+                <span>&times;</span>
+            </div>
+            
+        <table>
+        <tr>
+            <td><label for="empid">Empid :</label></td>
+            <td><input type="text" name="employeeid" id="employeeid" class="employeeid"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label for="employeename">Name :</label></td>
+            <td><input type="text" name="employeename" id="employeename" class="employeename"></td>
+        </tr>
+        <tr>
+            <td><label for="actionitem">Action Items :</label></td>
+            <td><input type="text" name="actionitem" id="actionitem" class="actionitem"></td>
+        </tr>
+        <tr>
+            <td><label for="concern">Concern :</label></td>
+            <td>
+                <select id="concern">
+                    <option value="1">No Concerns</option>
+                    <option value="2">Have Concerns</option>
+                    <option value="3">No Feedback</option>
+                  </select>
+            </td>
+        </tr>
+  
+        <tr>
+            <td><label for="comment">Comments :</label></td>
+            <td><input type="textarea" name="comment" id="comment" class="comment" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" class="save" value="Save" onclick=saveDetail() id="save">
+            </td>
+        </tr>
+        </table>
+
+        </div>
+    </div>
+ 
+</body>
+<script src="script.js"></script>
+</html>
